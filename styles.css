@@ -257,6 +257,13 @@ img {
   gap: 2rem; 
 }
 
+.skills__sql {
+  width: 80%;
+  background-color: #4caf50; 
+  height: 10px; 
+}
+
+
 .about__img img {
   width: 150px; /* Adjust size as needed */
   border-radius: 20%; /* Makes the image circular */
