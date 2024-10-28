@@ -258,8 +258,8 @@ img {
 }
 
 .skills__sql {
-  background-color: #4caf50; 
-  height: 10px; 
+  background-color: transparent; 
+  width: 0; 
 }
 
 
