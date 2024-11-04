@@ -12,7 +12,7 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         (function() {
-          emailjs.init("service_ftu2pwi"); // Replace YOUR_USER_ID with your actual EmailJS User ID
+          emailjs.init("3-R0E10eJ20moDjaj"); // Replace YOUR_USER_ID with your actual EmailJS User ID
         })();
     </script>
 
@@ -198,14 +198,15 @@
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Message"></textarea>
+                <form id="contact-form" class="contact__form">
+                    <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                    <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                    <textarea name="message" cols="0" rows="10" class="contact__input" placeholder="Message" required></textarea>
                     <input type="submit" value="Send" class="contact__button button">
                 </form>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
