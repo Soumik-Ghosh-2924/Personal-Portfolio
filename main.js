@@ -11,6 +11,20 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
+//Enabling the emailService using EmailJS =======================================================*/
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting the default way
+
+    emailjs.sendForm("service_ftu2pwi", "template_wwug2ul", this)
+      .then(function() {
+          alert("Message sent successfully!");
+      }, function(error) {
+          alert("Failed to send the message. Please try again.");
+          console.log("Failed to send email:", error);
+      });
+});
+
+
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 

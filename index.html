@@ -8,6 +8,16 @@
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 <!--    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>-->
 
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+          emailjs.init("service_ftu2pwi"); // Replace YOUR_USER_ID with your actual EmailJS User ID
+        })();
+    </script>
+
+
+
     <title>Soumik Ghosh | Portfolio</title>
 </head>
 <body>
@@ -192,7 +202,7 @@
                     <input type="text" placeholder="Name" class="contact__input">
                     <input type="mail" placeholder="Email" class="contact__input">
                     <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Message"></textarea>
-                    <input type="button" value="Send" class="contact__button button">
+                    <input type="submit" value="Send" class="contact__button button">
                 </form>
             </div>
         </section>
